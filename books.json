@@ -1,0 +1,32 @@
+[
+  {
+    "name": "War & Peace",
+    "status": "available",
+    "description": "Epic novel by Leo Nikolayevich Tolstoy, describing Russian society in the era of the wars against Napoleon in 1805-1812.",
+    "reader": ""
+  },
+  {
+    "name": "Silent Don",
+    "status": "unavailable",
+    "description": "Epic novel in four volumes, written by Mikhail Sholokhov",
+    "reader": "Pier Withoutear"
+  },
+  {
+    "name": "Pinocchio",
+    "status": "unavailable",
+    "description": "Fairy tale by Carlo Collodi, a classic of children's literature.",
+    "reader": "Aksiniia"
+  },
+  {
+    "name": "Java",
+    "status": "unavailable",
+    "description": "All about JAVA.",
+    "reader": "Artemon Pudel"
+  },
+  {
+    "name": "Mathematics",
+    "status": "available",
+    "description": "All about mathematics",
+    "reader": ""
+  }
+]
