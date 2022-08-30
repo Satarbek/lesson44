@@ -7,27 +7,29 @@
 </head>
 <body>
 <div class="container">
-  <p>List of books:</p>
-  <#list books as book>
-  <div class="row ${book?item_parity} flex">
-    <div class="column">
-      ${book?counter}
-    </div>
-    <div class="column">
-      ${book.name!"-- не указано --"}
-    </div>
-    <div class="column">
-      ${book.status!"-- не указано --"}
-    </div>
-    <div class="column">
-      ${book.description!"-- не указано --"}
-    </div>
-    <div class="column">
-      ${book.reader!"-- не указано --"}
-    </div>
-  </div>
-</#list>
-
+    <p>List of books:</p>
+  <table class="table table-dark">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Status</th>
+      <th scope="col">Description</th>
+      <th scope="col">Reader</th>
+    </tr>
+    </thead>
+    <tbody>
+    <#list books as book>
+    <tr>
+      <th scope="row">${book?counter}</th>
+      <td>${book.name!"-- не указано --"}</td>
+      <td>${book.status!"-- не указано --"}</td>
+      <td>${book.description!"-- не указано --"}</td>
+      <td>${book.reader!"-- не указано --"}</td>
+    </tr>
+    </#list>
+    </tbody>
+  </table>
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -8,19 +8,24 @@
 <body>
 <div class="container">
     <p>List of books:</p>
-    <#list books as book>
-    <div class="row ${book?item_parity} flex">
-        <div class="column">
-            ${book?counter}
-        </div>
-        <div class="column">
-            <a href="/booksinfo">${book.name!"-- не указано --"}</a>
-        </div>
-        <div class="column">
-            ${book.status!"-- не указано --"}
-        </div>
-    </div>
-</#list>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <#list books as book>
+        <tr>
+            <th scope="row">${book?counter}</th>
+            <td><a href="/booksinfo">${book.name!"-- не указано --"}</a></td>
+            <td>${book.status!"-- не указано --"}</td>
+        </tr>
+        </#list>
+        </tbody>
+    </table>
 
 
 </div>
